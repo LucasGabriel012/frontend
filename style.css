@@ -1,10 +1,106 @@
+
+/* Reset */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Configurações gerais */
+
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: rgb(162, 200, 238);
+    background-color: #0D101B;
+    color: #F8FAFC;
+}
+
+/* Container reutilizável */
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+/* Cabeçalho */
+
+.header {
+    width: 100%;
+    background-color: #111827;
+    border-bottom: 1px solid #2B3448;
+}
+
+.header-content {
+    min-height: 88px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+}
+
+/* Logotipo */
+
+.logo {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.logo img {
+    display: block;
+    width: 200px;
+    height: auto;
+}
+
+/* Navegação */
+
+.nav-list {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    list-style: none;
+}
+
+.nav-list a {
+    color: #F8FAFC;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    white-space: nowrap;
+
+    transition: color 0.2s ease;
+}
+
+.nav-list a:hover,
+.nav-list a:focus-visible {
+    color: #A78BFA;
+}
+
+/* Botão de login */
+
+.btn-login {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 11px 24px;
+
+    background-color: #8B5CF6;
+    color: #FFFFFF;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    border-radius: 8px;
+    text-decoration: none;
+    white-space: nowrap;
+
+    transition: background-color 0.2s ease;
+}
+
+.btn-login:hover {
+    background-color: #7C3AED;
 }
